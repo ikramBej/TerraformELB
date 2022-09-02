@@ -1,12 +1,12 @@
-provider "aws" {   
-region  = var.region
+provider "aws" {
+  region = var.region
 }
-resource "aws_vpc" "main" { 
- cidr_block = var.vpc_cidr 
- tags = { 
-          Project = "demo-assignment"
-          Name = "My Demo VPC"
-        }
+resource "aws_vpc" "main" {
+  cidr_block = var.vpc_cidr
+  tags = {
+    Project = "demo-assignment"
+    Name    = "My Demo VPC"
+  }
 }
 /*
 # Create Public Subnet1
